@@ -23,4 +23,5 @@ token <- create_token (app = "Tesla Bot Sentiment Analysis",
              access_token = access_token,
              access_secret = access_token_secret)
 
-
+sample1 <- search_tweets("#TeslaBot", n = 5, include_rts = FALSE)
+sample1
