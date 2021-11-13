@@ -1,0 +1,13 @@
+install.packages("academictwitteR")
+
+library(academictwitteR)
+
+bearer_token <- "AAAAAAAAAAAAAAAAAAAAAHv8VgEAAAAATp%2B%2BS12k1LAWkiC2wIlD50i7BOI%3DBtszRAMoyBZeTL6AKbkVAXxxmiSE8QVbq1OstcaCZladHwx1su"
+tweets <-
+  get_all_tweets("#TeslaBot lang:en",
+                 "2020-01-01T00:00:00Z",
+                 "2021-11-12T00:00:00Z",
+                 bearer_token)
+
+
+View(tweets$text)
